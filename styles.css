@@ -1,0 +1,18 @@
+@import url(https://fonts.googleapis.com/css?family=Poppins:400,300,500);
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+body {
+  margin: 0;
+  padding: 96px;
+  font-size: 21px;
+  background: #fff;
+  color: #000;
+  font-family: "Poppins", sans-serif;
+}
+/* Add the remaining CSS code here */
