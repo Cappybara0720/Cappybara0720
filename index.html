@@ -1,28 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gamee Studio Wish Random</title>
+    <title>Y2K Quote Generator</title>
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
     <div class="quote-container">
+        <!-- Tiêu đề chính và phụ -->
         <h1 class="studio-title">Gamee Studio</h1>
-        <p class="subtitle">Wish random</p>
-        <div class="decor-star decor-star--top"></div>
-        
+        <p class="subtitle">Wish Random</p>
+
+        <!-- Ngôi sao trang trí trên -->
+        <div class="decor-star decor-star--top">✦</div>
+
+        <!-- Ngôi sao trang trí bên trái và bên phải -->
+        <div class="decor-star decor-star--left">✦</div>
+        <div class="decor-star decor-star--right">✦</div>
+
+        <!-- Hộp hiển thị trích dẫn -->
         <div class="quote-box">
-            <p class="quote-text" id="quoteDisplay">“quotes raats laf voo nghiax khoong cos ys gif heets”</p>
-            <p class="quote-author">My Dieu</p>
+            <p class="quote-text" id="quoteDisplay">"Chúc bạn sinh nhật vui vẻ, thật nhiều hạnh phúc và niềm vui!"</p>
+            <p class="quote-author" id="authorDisplay">- My Dieu</p>
         </div>
-        
-        <div class="decor-star decor-star--left"></div>
-        <div class="decor-star decor-star--right"></div>
-        
-        <button class="new-quote-button" onclick="changeQuote()">New quotes</button>
+
+        <!-- Nút tạo trích dẫn mới -->
+        <button class="new-quote-button" onclick="changeQuote()">New Quotes</button>
     </div>
 
     <script src="script.js"></script>
 </body>
+
 </html>
