@@ -1,86 +1,71 @@
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 
 :root {
-  /* Colors for the Y2K theme */
-  --background: #0F0D0E;
-  --card-bg: #221F1F;
-  --border-color: #FF00FF;
-  --text-color: #FFD700;
-  --highlight: #FF69B4;
-  
-  /* Fonts */
-  --font-main: 'Press Start 2P', cursive;
-  --font-size: 18px;
-  --font-size-lg: 22px;
-
-  /* Spacing and shadows */
-  --padding: 16px;
+  --bg-color: #0d0d0d;
+  --text-color: #ffd700;
+  --highlight: #ff69b4;
+  --decor-color: #FF00FF;
+  --banner-bg: #221f1f;
   --shadow: 0px 0px 15px #FF00FF, 0px 0px 25px #FFD700;
+  --font-main: 'Press Start 2P', cursive;
 }
 
 body {
-  min-height: 100vh;
+  background-color: var(--bg-color);
+  font-family: var(--font-main);
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: var(--background);
-  font-family: var(--font-main);
+  min-height: 100vh;
   color: var(--text-color);
   margin: 0;
+}
+
+.bday-card {
+  text-align: center;
+  background-color: var(--banner-bg);
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: var(--shadow);
+  max-width: 400px;
+  width: 90%;
+}
+
+.bday-decor {
+  font-size: 2rem;
+  color: var(--decor-color);
+  animation: spin 3s linear infinite;
+}
+
+.bday-banner {
+  font-size: 2.5rem;
+  color: var(--highlight);
+  text-shadow: 0px 0px 10px var(--decor-color);
+  margin: 20px 0;
+}
+
+.bday-message {
+  background: #221f1f;
+  color: var(--text-color);
+  padding: 15px;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  box-shadow: 0px 0px 10px #ff00ff;
+  position: relative;
   overflow: hidden;
 }
 
-.quote-card {
-  max-width: 380px;
-  padding: var(--padding);
-  background: var(--card-bg);
-  border: 3px solid var(--border-color);
-  border-radius: 12px;
-  box-shadow: var(--shadow);
-  color: var(--text-color);
-  text-align: center;
-  font-size: var(--font-size);
-  position: relative;
+.bday-message:hover {
   animation: glitch 1s infinite;
 }
 
-.quote-card::before,
-.quote-card::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: var(--border-color);
-  opacity: 0.15;
-  z-index: -1;
-  transform: translate(-3px, -3px);
-  mix-blend-mode: color-dodge;
+.bday-pic img {
+  max-width: 100%;
+  border-radius: 50%;
+  box-shadow: var(--shadow);
 }
 
-.quote-card::after {
-  transform: translate(3px, 3px);
-  opacity: 0.1;
-}
-
-.quote-text {
-  font-size: var(--font-size-lg);
-  font-weight: bold;
-  color: var(--highlight);
-  margin: var(--padding) 0;
-  line-height: 1.5;
-  text-shadow: 0px 0px 10px #FF00FF;
-}
-
-.author {
-  font-size: var(--font-size);
-  color: var(--text-color);
-  opacity: 0.8;
-  text-transform: uppercase;
-}
-
-/* Glitch animation */
+/* Glitch animation for message */
 @keyframes glitch {
   0% { transform: translate(0); }
   20% { transform: translate(-2px, 2px); }
@@ -88,4 +73,28 @@ body {
   60% { transform: translate(2px, 2px); }
   80% { transform: translate(2px, -2px); }
   100% { transform: translate(0); }
+}
+
+/* Decorations */
+.bday-decor--top-right {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.bday-decor--top-left {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+.bday-decor--bottom-right {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0); }
+  100% { transform: rotate(360deg); }
 }
