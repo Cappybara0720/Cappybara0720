@@ -1,14 +1,14 @@
 const quotes = [
     {
-        text: "Never give up because you never know if the next try is going to be the one that works.",
+        text: "Text nhảm không có nghĩa 1.",
         author: "Mary Kay Ash"
     },
     {
-        text: "The only way to do great work is to love what you do.",
+        text: "Text nhảm không có nghĩa 2.",
         author: "Steve Jobs"
     },
     {
-        text: "Believe you can and you're halfway there.",
+        text: "text nhảm không có nghĩa 3.",
         author: "Theodore Roosevelt"
     }
 ];
