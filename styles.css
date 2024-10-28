@@ -9,66 +9,91 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    font-family: Arial, sans-serif;
-    background-color: #4b6cb7;
+    background: linear-gradient(135deg, #a1c4fd 0%, #c2e9fb 100%);
+    font-family: 'Courier New', Courier, monospace;
 }
 
-.quote-card {
-    background-color: #ffffff;
-    padding: 30px 20px;
-    width: 300px;
-    border-radius: 15px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+.quote-container {
     text-align: center;
+    position: relative;
+    padding: 20px;
+    width: 300px;
 }
 
-.quote-title {
-    font-size: 1.2rem;
+.studio-title {
+    font-size: 2rem;
+    color: #2d2b2e;
     font-weight: bold;
-    color: #333;
-    margin-bottom: 15px;
+}
+
+.subtitle {
+    font-size: 1.2rem;
+    color: #2d2b2e;
+    margin-bottom: 20px;
+}
+
+.decor-star {
+    font-size: 2rem;
+    color: #2d2b2e;
+}
+
+.decor-star--top {
+    content: '✦';
+    display: block;
+    font-size: 3rem;
+    margin: 20px auto;
+}
+
+.decor-star--left,
+.decor-star--right {
+    position: absolute;
+    font-size: 1.5rem;
+    color: #2d2b2e;
+}
+
+.decor-star--left {
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+}
+
+.decor-star--right {
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+}
+
+.quote-box {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    margin: 10px 0;
+    border: 1px solid #2d2b2e;
+    border-radius: 8px;
 }
 
 .quote-text {
-    font-size: 1rem;
-    color: #555;
+    font-size: 1.1rem;
     font-style: italic;
-    margin: 10px 0;
-    line-height: 1.4;
+    color: #2d2b2e;
 }
 
 .quote-author {
-    font-size: 0.9rem;
-    color: #888;
-    margin-bottom: 20px;
-}
-
-.quote-actions {
-    display: flex;
-    justify-content: center;
-    gap: 15px;
-    margin-bottom: 20px;
-}
-
-.action-button {
-    font-size: 1.2rem;
-    background-color: transparent;
-    border: none;
-    cursor: pointer;
-    color: #4b6cb7;
+    margin-top: 10px;
+    font-size: 1rem;
+    color: #2d2b2e;
 }
 
 .new-quote-button {
-    background-color: #4b6cb7;
-    color: #fff;
+    background-color: #2d2b2e;
+    color: #ffffff;
     padding: 10px 20px;
     border: none;
     border-radius: 8px;
     cursor: pointer;
-    font-size: 0.9rem;
+    font-size: 1rem;
     transition: background-color 0.3s;
 }
 
 .new-quote-button:hover {
-    background-color: #365999;
+    background-color: #1c1b1c;
 }
