@@ -4,34 +4,33 @@
     box-sizing: border-box;
 }
 
-@font-face {
-    font-family: 'Molen Display';
-    src: url('molen-surplus.otf') format('opentype');
-}
-
 body {
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: url('Bg2.png') no-repeat center center fixed;
+    background: url('molen-surplus-bg.png') no-repeat center center fixed; /* Đảm bảo rằng tên file ảnh đúng */
     background-size: cover;
     font-family: 'Courier New', Courier, monospace;
+}
+
+@font-face {
+    font-family: 'Molen Display';
+    src: url('molen-surplus.otf') format('opentype');
 }
 
 .quote-container {
     text-align: center;
     position: relative;
     padding: 20px;
-    width: 350px; /* Adjusted for better readability */
-    max-width: 100%;
+    width: 300px;
 }
 
 .studio-title {
-    font-family: 'Molen Display', sans-serif;
-    font-size: 2.5rem;
+    font-size: 2rem;
     color: #2d2b2e;
     font-weight: bold;
+    font-family: 'Molen Display', sans-serif;
 }
 
 .subtitle {
@@ -77,7 +76,6 @@ body {
     margin: 10px 0;
     border: 1px solid #2d2b2e;
     border-radius: 8px;
-    min-height: 150px; /* Minimum height to accommodate longest quote */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -87,7 +85,7 @@ body {
     font-size: 1.1rem;
     font-style: italic;
     color: #2d2b2e;
-    line-height: 1.4;
+    text-align: center;
 }
 
 .quote-author {
