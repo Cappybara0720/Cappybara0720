@@ -1,126 +1,91 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400&family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 
-/* Defining the theme for the card: colors, fonts, spacing. 
-This uses CSS variables - so you only have to change the colors in one place */ 
 :root {
-  /* The color for your card background and background pattern */ 
-  --background: #F3F0D7;
-  --background-decor: #DBD0C0;
+  /* Colors for the Y2K theme */
+  --background: #0F0D0E;
+  --card-bg: #221F1F;
+  --border-color: #FF00FF;
+  --text-color: #FFD700;
+  --highlight: #FF69B4;
   
+  /* Fonts */
+  --font-main: 'Press Start 2P', cursive;
+  --font-size: 18px;
+  --font-size-lg: 22px;
 
-  /* Colors for the elements on your card */ 
-  --banner-bg: #1C0C5B;
-  --banner-txt: white;
-
-  /* Message area colors */ 
-  --message-bg: #F1EDE9;
-  --message-line: #94ACD4;
-  --message-txt: #333333;
-
-  /* Fonts */ 
-  --font-banner: 'Roboto', sans-serif;
-  --font-text: 'Lobster', cursive;
-
-  /* Space and other details */
-  --space: 16px;
-  --space-xsm: 4px;
-  --space-sm: 8px;
-  --space-lg: 24px;
-  --space-xlg: 48px;
+  /* Spacing and shadows */
+  --padding: 16px;
+  --shadow: 0px 0px 15px #FF00FF, 0px 0px 25px #FFD700;
 }
 
-/* Base template configurations */ 
 body {
   min-height: 100vh;
-  width: 100vw;
   display: flex;
   justify-content: center;
-  overflow-x: hidden;
-
-  /* background color - here we are using the variable we created earlier! */ 
+  align-items: center;
   background-color: var(--background);
-
-  /* background pattern - remove the lines below and paste the new code if you want to use a different style */ 
-  background-image: radial-gradient(var(--background-decor) 20%, transparent 0), radial-gradient(var(--background-decor) 20%, transparent 0);
-  background-size: 30px 30px;
-  background-position: 0 0, 15px 15px;
-
+  font-family: var(--font-main);
+  color: var(--text-color);
+  margin: 0;
+  overflow: hidden;
 }
 
-.bday-card {
-  max-width: 420px;
-  height: 100%;
-  padding-top: var(--space-lg);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
+.quote-card {
+  max-width: 380px;
+  padding: var(--padding);
+  background: var(--card-bg);
+  border: 3px solid var(--border-color);
+  border-radius: 12px;
+  box-shadow: var(--shadow);
+  color: var(--text-color);
+  text-align: center;
+  font-size: var(--font-size);
   position: relative;
+  animation: glitch 1s infinite;
 }
 
-.bday-pic {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 280px;
-  height: 240px;
-  padding: var(--space-sm) var(--space-sm) var(--space-xlg);
-  background: white;
-  border-radius: 4px;
-  box-shadow: var(--space-xsm) var(--space-xsm) 15px rgba(0,0,0, .15);
-
-  /* Edit the Translate property below to adjust the position of your picture */ 
-  transform: rotate(5deg) translate(20px, 45px);
-}
-
-.bday-pic img {
+.quote-card::before,
+.quote-card::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  background: var(--border-color);
+  opacity: 0.15;
+  z-index: -1;
+  transform: translate(-3px, -3px);
+  mix-blend-mode: color-dodge;
 }
 
-.bday-decor--container {
-  position: relative;
+.quote-card::after {
+  transform: translate(3px, 3px);
+  opacity: 0.1;
 }
 
-.bday-banner {
-  display: flex;
-  flex-direction: column;
-  align-items: baseline;
-  font-size: 42px;
-  z-index: 1;
+.quote-text {
+  font-size: var(--font-size-lg);
+  font-weight: bold;
+  color: var(--highlight);
+  margin: var(--padding) 0;
+  line-height: 1.5;
+  text-shadow: 0px 0px 10px #FF00FF;
+}
 
-  /* Play around with those properties to change your banner styling */ 
-  color: var(--banner-txt);
-  font-family: var(--font-banner);
+.author {
+  font-size: var(--font-size);
+  color: var(--text-color);
+  opacity: 0.8;
   text-transform: uppercase;
-  transform: rotate(-5deg);
-  gap: var(--space-sm) 0;
 }
 
-.bday-banner span {
-  background: var(--banner-bg);
-  padding: var(--space) var(--space-lg);
-  flex-grow: 0;
-}
-
-.bday-banner span:nth-child(2) {
-  margin-left: var(--space-lg);
-}
-
-
-.bday-message {
-  max-width: 80%;
-  padding: 35px var(--space);
-  font-family: var(--font-text);
-  font-size: 18px;
-  line-height: 32px;
-  color: var(--message-txt);
-  background-color: var(--message-bg);
-}
-
-/* Paper */
-.bday-message--paper {
-  background: repeating-linear-gradient(var(--message-bg), var(--message-bg) 31px, var(--message-line) 31px, var(--message-line) 32px);
-  box-shadow: var(--space-xsm) var(--space-xsm) 15px rgba(0,0,0, .15);
+/* Glitch animation */
+@keyframes glitch {
+  0% { transform: translate(0); }
+  20% { transform: translate(-2px, 2px); }
+  40% { transform: translate(-2px, -2px); }
+  60% { transform: translate(2px, 2px); }
+  80% { transform: translate(2px, -2px); }
+  100% { transform: translate(0); }
 }
