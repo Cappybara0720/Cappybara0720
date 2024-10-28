@@ -1,15 +1,15 @@
 const quotes = [
     {
-        text: "Text nhảm không có nghĩa 1.",
-        author: "Mary Kay Ash"
+        text: "quotes raats laf voo nghiax khoong cos ys gif heets",
+        author: "My Dieu"
     },
     {
-        text: "Text nhảm không có nghĩa 2.",
-        author: "Steve Jobs"
+        text: "Be yourself; everyone else is already taken.",
+        author: "Oscar Wilde"
     },
     {
-        text: "text nhảm không có nghĩa 3.",
-        author: "Theodore Roosevelt"
+        text: "To be yourself in a world that is constantly trying to make you something else is the greatest accomplishment.",
+        author: "Ralph Waldo Emerson"
     }
 ];
 
@@ -17,5 +17,5 @@ function changeQuote() {
     const randomIndex = Math.floor(Math.random() * quotes.length);
     const quote = quotes[randomIndex];
     document.getElementById("quoteDisplay").innerText = `“${quote.text}”`;
-    document.querySelector(".quote-author").innerText = `— ${quote.author}`;
+    document.querySelector(".quote-author").innerText = quote.author;
 }
