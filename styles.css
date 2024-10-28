@@ -42,19 +42,32 @@ body {
 .decor-star {
     font-size: 2rem;
     color: #2d2b2e;
-    position: absolute; /* Thay đổi vị trí thành absolute */
+}
+
+.decor-star--top {
+    content: '✦';
+    display: block;
+    font-size: 3rem;
+    margin: 20px auto;
+}
+
+.decor-star--left,
+.decor-star--right {
+    position: absolute;
+    font-size: 1.5rem;
+    color: #2d2b2e;
 }
 
 .decor-star--left {
-    top: 50%; /* Căn giữa theo chiều cao */
-    left: -30px; /* Điều chỉnh khoảng cách bên trái */
-    transform: translateY(-50%); /* Căn giữa theo chiều dọc */
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
 }
 
 .decor-star--right {
-    top: 50%; /* Căn giữa theo chiều cao */
-    right: -30px; /* Điều chỉnh khoảng cách bên phải */
-    transform: translateY(-50%); /* Căn giữa theo chiều dọc */
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
 }
 
 .quote-box {
