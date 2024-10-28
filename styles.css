@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400&family=Lobster&display=swap'); 
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&display=swap'); 
 
 /* Defining the theme for the card: colors, fonts, spacing. 
 This uses CSS variables - so you only have to change the colors in one place */ 
@@ -17,10 +17,9 @@ This uses CSS variables - so you only have to change the colors in one place */
   --message-line: #94ACD4;
   --message-txt: #333333;
 
-  /* Font mới cho banner và tin nhắn */
-  --font-banner: 'Roboto', sans-serif;
-  --font-text: 'Lobster', cursive;
-
+  /* Fonts */ 
+  --font-banner: 'Abril Fatface', cursive;
+  --font-text: 'Shadows Into Light', cursive;
 
   /* Space and other details */
   --space: 16px;
