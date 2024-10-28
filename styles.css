@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&display=swap'); 
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400&family=Lobster&display=swap');
 
 /* Defining the theme for the card: colors, fonts, spacing. 
 This uses CSS variables - so you only have to change the colors in one place */ 
@@ -18,8 +18,8 @@ This uses CSS variables - so you only have to change the colors in one place */
   --message-txt: #333333;
 
   /* Fonts */ 
-  --font-banner: "Playwrite GB S", serif;;
-  --font-text: 'Playwrite', cursive;
+  --font-banner: 'Roboto', sans-serif;
+  --font-text: 'Lobster', cursive;
 
   /* Space and other details */
   --space: 16px;
@@ -124,140 +124,3 @@ body {
   background: repeating-linear-gradient(var(--message-bg), var(--message-bg) 31px, var(--message-line) 31px, var(--message-line) 32px);
   box-shadow: var(--space-xsm) var(--space-xsm) 15px rgba(0,0,0, .15);
 }
-/* End - Paper */
-
-/* Block right */
-.bday-message--block-right {
-  position: relative;
-}
-
-.bday-message--block-right::before {
-  content: "";
-  width: 100vw;
-  height: 100%;
-  position: absolute;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  background: var(--paper);
-  z-index: -1;
-}
-/* End - Block right */
-
-/* Block left */
-.bday-message--block-left {
-  position: relative;
-}
-
-.bday-message--block-left::before {
-  content: "";
-  width: 100vw;
-  height: 100%;
-  position: absolute;
-  left: 0;
-  top: 0;
-  bottom: 0;
-  background: var(--paper);
-  z-index: -1;
-}
-/* End - Block left */
-
-
-.bday-decor {
-  /* Emojis are text - so here we are setting a font-size to make them bigger */ 
-  font-size: 96px;
-}
-
-/* Positioning for the emojis - play around with the values to change the placement of your decorations */ 
-.bday-decor--top-right { 
-  position: absolute;
-  bottom: -70px;
-  right: -20px;
-}
-
-.bday-decor--top-left {
-  position: absolute;
-  bottom: 0px;
-  left: -25px;
-}
-
-.bday-decor--bottom-right {
-  position: absolute; 
-  right: 20px;
-}
-
-/* Animations */ 
-
-/* Here we designate an specific animation to an specific element using a class. We have a defined name, time and iteration-count for each animation. We can also define the origin point from which the animation will happen - the default is the center. */  
-.zoom-left-in-out {
-  animation-name: zoom-left-in-out;
-  animation-duration: 1.75s;
-  animation-iteration-count: infinite;
-  transform-origin: left bottom;
-}
-
-/* Here we specify what will change on the element when they animate */ 
-@keyframes zoom-left-in-out {
-  /* Animation will start and end with the same settings */ 
-  0%, 100% {
-    transform: scale(0.95) rotate(2deg);
-  }
-
-  /* Animation will reach those settings 50% into the duration time we set on the declaration */
-  50% {
-    transform: scale(1) rotate(-2deg);
-  }
-}
-
-/* pulse */ 
-.pulse {
-  animation-name: pulse;
-  animation-duration: 1.3s;
-  animation-iteration-count: infinite;
-}
-
-@keyframes pulse {
-  0%, 100% {
-    transform: scale(0.9);
-  }
-
-  50% {
-    transform: scale(1);
-  }
-}
-/* pulse - End */
-
-/* float */ 
-.float {
-  animation-name: float;
-  animation-duration: 1.9s;
-  animation-iteration-count: infinite;
-}
-
-@keyframes float {
-  0%, 100% {
-    transform: translateY(0px);
-  }
-  50% {
-    transform: translateY(10px);
-  }
-}
-/* float - End */
-
-/* spin */ 
-.spin {
-  animation-name: spin;
-  animation-duration: 3s;
-  animation-iteration-count: infinite;
-  animation-timing-function: linear; 
-}
-
-@keyframes spin {
-  from {
-    transform: rotate(0);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-/* spin - End */
