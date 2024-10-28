@@ -2,32 +2,25 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Radom Quotes</title>
-    <link href="styles.css" rel="stylesheet" type="text/css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quote of the Day</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-    <div class="bday-card">
-
-        <!-- Top part of the card: decorations only -->
-        <div class="bday-decor--container">
-            <p class="bday-decor bday-decor--top-right">🎈</p>
-            <p class="bday-decor bday-decor--top-left">🌼</p>
+    <div class="quote-card">
+        <h2 class="quote-title">Quote of the Day</h2>
+        <p class="quote-text" id="quoteDisplay">“Never give up because you never know if the next try is going to be the one that works.”</p>
+        <p class="quote-author">— Mary Kay Ash</p>
+        
+        <div class="quote-actions">
+            <button class="action-button">🔊</button>
+            <button class="action-button">💾</button>
+            <button class="action-button">🐦</button>
         </div>
-
-        <!-- Banner -->
-        <h1 class="bday-banner">
-            <span>Happy</span> <span>Birthday!</span>
-        </h1>
-
-        <!-- Message + decoration -->
-        <div class="bday-message" onclick="changeQuote()">
-            <div class="quote" id="quoteDisplay">Chúc bạn sinh nhật vui vẻ, thật nhiều hạnh phúc và niềm vui!</div>
-            <p class="bday-decor bday-decor--bottom-right">🎉</p>
-        </div>
-
+        
+        <button class="new-quote-button" onclick="changeQuote()">New Quote</button>
     </div>
 
     <script src="script.js"></script>
