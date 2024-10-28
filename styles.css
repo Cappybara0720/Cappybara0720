@@ -59,13 +59,13 @@ body {
 }
 
 .decor-star--left {
-    top: 50%;
+    top: 60%;
     left: 10px;
     transform: translateY(-50%);
 }
 
 .decor-star--right {
-    top: 50%;
+    top: 60%;
     right: 10px;
     transform: translateY(-50%);
 }
