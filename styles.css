@@ -9,7 +9,7 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: url('molen-surplus-bg.png') no-repeat center center fixed; /* Đảm bảo rằng tên file ảnh đúng */
+    background: url('Bg2.png') no-repeat center center fixed;
     background-size: cover;
     font-family: 'Courier New', Courier, monospace;
 }
@@ -27,7 +27,7 @@ body {
 }
 
 .studio-title {
-    font-size: 2rem;
+    font-size: 2.5rem;
     color: #2d2b2e;
     font-weight: bold;
     font-family: 'Molen Display', sans-serif;
@@ -76,9 +76,6 @@ body {
     margin: 10px 0;
     border: 1px solid #2d2b2e;
     border-radius: 8px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 .quote-text {
