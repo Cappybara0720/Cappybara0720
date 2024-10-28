@@ -1,15 +1,12 @@
-/* Import the Molen Surplus font */
-@font-face {
-    font-family: 'Molen Surplus';
-    src: url('molen-surplus.otf') format('opentype');
-    font-weight: normal;
-    font-style: normal;
-}
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'Molen Display';
+    src: url('molen-surplus.otf') format('opentype');
 }
 
 body {
@@ -17,7 +14,7 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: url('https://drive.google.com/uc?export=view&id=1NzRN8wUcPkjpH6iURIL6TtWFp8KcQGGA') no-repeat center center fixed;
+    background: url('remove-2.png') no-repeat center center fixed;
     background-size: cover;
     font-family: 'Courier New', Courier, monospace;
 }
@@ -30,7 +27,7 @@ body {
 }
 
 .studio-title {
-    font-family: 'Molen Surplus', sans-serif;
+    font-family: 'Molen Display', sans-serif;
     font-size: 2rem;
     color: #2d2b2e;
     font-weight: bold;
