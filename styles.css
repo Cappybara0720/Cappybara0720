@@ -18,8 +18,8 @@ This uses CSS variables - so you only have to change the colors in one place */
   --message-txt: #333333;
 
   /* Fonts */ 
-  --font-banner: 'Roboto', sans-serif;
-  --font-text: 'Lobster', cursive;
+  --font-banner: 'Playwrite', sans-serif;
+  --font-text: 'Playwrite', cursive;
 
   /* Space and other details */
   --space: 16px;
