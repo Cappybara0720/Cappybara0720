@@ -8,12 +8,20 @@ const quotes = [
     { text: "Chúc a Mít Đóc luôn vui tươi như hoe 🌸, vẽ điệp như tranh 🎨", author: "for HieuPD" },
     { text: "Mong a Kiên luôn mạnh khỏe, vui vẻ, sớm lấy vợ 👰", author: "for KienNt " },
     { text: "Chúc anh Thụ luôn vui vẻ, hạnh phúc 🎉", author: "for TungNT " },
-    { text: "", author: "for " },
-    { text: "", author: "for " },
 ];
 
+let currentIndex = 0;
+
 function changeQuote() {
-    const randomIndex = Math.floor(Math.random() * quotes.length);
-    document.getElementById("quoteDisplay").innerText = `"${quotes[randomIndex].text}"`;
-    document.getElementById("authorDisplay").innerText = `- ${quotes[randomIndex].author}`;
+    // Hiển thị câu trích dẫn và tác giả tại chỉ số hiện tại
+    document.getElementById("quoteDisplay").innerText = `"${quotes[currentIndex].text}"`;
+    document.getElementById("authorDisplay").innerText = `- ${quotes[currentIndex].author}`;
+
+    // Tăng chỉ số cho lần hiển thị tiếp theo
+    currentIndex++;
+
+    // Nếu đạt đến cuối danh sách, quay lại đầu danh sách
+    if (currentIndex >= quotes.length) {
+        currentIndex = 0;
+    }
 }
