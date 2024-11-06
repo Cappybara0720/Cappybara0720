@@ -24,9 +24,8 @@ const quotes = [
     { text: "Chúc Quang Huy lun chăm chỉ học hành, hay ăn chóng lớn, ngoan ngoãn nghe lời bố mẹ. Chúc anh sớm có học bổng.  ", author: "for HuyNQ " },
     { text: "Chúc em có một ngày Men's Day thật vui vẻ và ý nghĩa nhé 🥳", author: "for SonNHT " },
     { text: "Chúc em luôn giữ vững bản lĩnh, kiên cường vượt qua mọi thử thách", author: "for DongNS " },
-    { text: "Chúc em mỗi ngày đều luôn tích cực, vui vẻ nha 
-", author: "for NinhNK" },
-    { text: "Chúc bác giàu, chúc bác zui, chúc bác mạnh khỏe,", author: "for QuangNM " },
+    { text: "Chúc em mỗi ngày đều luôn tích cực, vui vẻ nha", author: "for NinhNK" },
+    { text: "Chúc bác giàu, chúc bác zui, chúc bác mạnh khỏe", author: "for QuangNM " },
     { text: "Chúc bác Nam mau có bồ, mau giàu, và thật happy happyyyy", author: "for NamNV " },
     { text: "Chúc bác mãi giàu, mua thêm 5 lô đất, mở thêm 7 cái chung cư", author: "for HoaiND " },
     { text: "Chúc anh Kiên Bùi có nhiều sức khỏe, năng lượng tích cực", author: "for KienBH " },
