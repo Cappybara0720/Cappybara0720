@@ -19,6 +19,11 @@ body {
     src: url('molen-surplus.otf') format('opentype');
 }
 
+@font-face {
+    font-family: 'Gabriola';
+    src: url('Gabriola.ttf') format('truetype');
+}
+
 .quote-container {
     text-align: center;
     position: relative;
@@ -79,15 +84,17 @@ body {
 }
 
 .quote-text {
-    font-size: 1.1rem;
+    font-family: 'Gabriola', sans-serif;
+    font-size: 1.5rem;
     font-style: italic;
     color: #2d2b2e;
     text-align: center;
 }
 
 .quote-author {
+    font-family: 'Gabriola', sans-serif;
     margin-top: 10px;
-    font-size: 1rem;
+    font-size: 1.2rem;
     color: #2d2b2e;
 }
 
