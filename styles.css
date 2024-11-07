@@ -20,8 +20,8 @@ body {
 }
 
 @font-face {
-    font-family: 'Gabriola';
-    src: url('Gabriola.ttf') format('truetype');
+    font-family: 'PlaywriteGBS';
+    src: url('PlaywriteGBS-Regular.ttf') format('truetype');
 }
 
 .quote-container {
@@ -84,7 +84,7 @@ body {
 }
 
 .quote-text {
-    font-family: 'Gabriola', sans-serif;
+    font-family: 'PlaywriteGBS', sans-serif;
     font-size: 1.5rem;
     font-style: italic;
     color: #2d2b2e;
@@ -92,7 +92,7 @@ body {
 }
 
 .quote-author {
-    font-family: 'Gabriola', sans-serif;
+    font-family: 'PlaywriteGBS', sans-serif;
     margin-top: 10px;
     font-size: 1.2rem;
     color: #2d2b2e;
