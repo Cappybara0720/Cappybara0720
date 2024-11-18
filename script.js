@@ -50,7 +50,7 @@ const quotes = [
     { text: "Chúc anh sớm có chiếc game triệu đô gấp 10 lần Home Pin 2 nhé ạ 🤩", author: "for QuanNA " },
     { text: "Chúc anh có sớm có game triệu đô, hoặc nửa triệu cũng được ạ 😁", author: "for LamNT " },
     { text: "Chúc bạn code không bug nhé 😝", author: "for DucNV " },
-    { text: "Chúc Phúc luôn hạnh phúc, may mắn luôn  đến với emmm 🍀.", author: "for PhucVH " },
+    { text: "Chúc Phúc luôn hạnh phúc, may mắn luôn đến với emmm 🍀.", author: "for PhucVH " },
     { text: "Chúc em hôm nay nhận được nhiều quà từ các em gái ngoan xinh yêu 😝", author: "for NamLH " },
     { text: "Tạo ra 1 game thành công 10 triệu lượt tải, sớm tìm được “một nửa” của mình và đặc biệt là sẽ trúng giải Vietlot mega 12 tỷ cho bọn em được hưởng ké với nhaaa ka ka =)) ", author: "for TungNS " },
     { text: "Chúc bạn sớm thực hiện được ước mơ của mình và trở thành chiến thần code nhé! Hihi  🎉✨", author: "for NghiaDT " },
