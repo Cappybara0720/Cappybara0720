@@ -39,7 +39,7 @@ const quotes = [
     { text: "Chúc anh thành công rực rỡ trong lĩnh vực game, tiếp tục dẫn dắt công ty vươn xa và phát triển. ", author: "for GiangND " },
     { text: "Mong anh luôn nhiệt huyết, quyết đoán trong vai trò Project Manager, đạt nhiều thành công và dẫn dắt đội nhóm vượt qua mọi thử thách. ", author: "for HungNV " },
     { text: "Chúc Chí nhiều tình thừa tiền, muốn gì được nấy, tình iu viên mãn vui vui vẻ vẻ 😁", author: "for ChiNH " },
-    { text: "Em Công có hết rồi nên cũng chả biết chúc gì :)) Chúc T1 của em mãi đỉnk", author: "for CongNT " },
+    { text: "Công có hết rồi nên cũng chả biết chúc gì :)) Chúc T1 của Công mãi đỉnh", author: "for CongNT " },
     { text: "Mong mọi điều tốt lành, thuận lợi sẽ luôn đồng hành cùng anh trên mọi chặng đườngggg 🎉✨", author: "for ThanhND " },
     { text: "Chúc cho công việc của anh luôn thuận lợi và sớm lấy vợ anh nhé 🥳", author: "for HieuHV " },
     { text: "Chúc cho gia đình anh luôn êm ấm, hạnh phúc, con đàn cháu đống mãi vui mãi khỏe ạ 😝", author: "for HiepKD " },
