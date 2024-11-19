@@ -7,7 +7,7 @@ const quotes = [
     { text: "Nhân ngày Men's Day, chúc anh Híu luôn giữ được nụ cười tươi trên môi 😁, luôn hạnh phúc với những điều anh đã chọn. ", author: "for HieuHV" },
     { text: "Mong anh Hiệp có thật nhiều niềm vui mới và sớm đạt được siêu phẩm game 🎮", author: "for HiepKD" },
     { text: "Chúc a Mít Đóc luôn vui tươi như hoe 🌸, vẽ điệp như tranh 🎨 . Nhanh nhanh kết hôn 💍", author: "for HieuPD" },
-    { text: "Mong a Kiên luôn mạnh khỏe, vui vẻ, sớm lấy vợ 👰 và công việc của a luôn luôn thuận lợi", author: "for KienNt " },
+    { text: "Mong a Kiên luôn mạnh khỏe, vui vẻ, sớm lấy vợ 👰 và công việc của a luôn luôn thuận lợi", author: "for KienNT " },
     { text: "Chúc anh Tùng luôn vui vẻ, hạnh phúc, yêu đời, tràn đầy năng lượng ", author: "for TungNT " },
     { text: "Ước anh có sức khoẻ, có niềm vui, có hạnh phúc, có tiền tài 😉", author: "for QuyetND " },
     { text: "Chúc anh cầu được ước thấy, mơ gì được nấy", author: "for QuanNA " },
