@@ -56,7 +56,7 @@ const quotes = [
     { text: "Chúc bạn sớm thực hiện được ước mơ của mình và trở thành chiến thần code nhé! Hihi  🎉✨", author: "for NghiaDT " },
     { text: "Chúc yên sau của anh luôn ấm! 😎😎😎", author: "for ThuyNT " },
     { text: "Chúc bác gọt hoa quả mãi ngon, mãi đỉnh, mãi soft và mãi dễ huông như giờ nhaa =))) ", author: "for NamNV " },
-    { text: "Mong anh sớm tìm được mục đích đi làm. Chúc anh 6 múi. Chúc anh sớm bắn lỗ nào trúng lỗ nấy 😝", author: "for AnhNT " },
+    { text: "Mong anh sớm tìm được mục đích đi làm. Chúc anh 6 múi. Chúc anh sớm bắn lỗ nào trúng lỗ nấy 😝", author: "for AnhDT " },
     { text: "Chúc bạn vẽ nét nào được nét đấy, trộm vía không sửa không sai 😂 Chúc bạn vui vẻ, nhiều tiền, nhiều nhiều tiền", author: "for ThucNG " },
     { text: "Chúc anh chưa có bồ thì sớm có bồ, có bồ rồi thì sớm kết hôn", author: "for LinhNG " },
     { text: "Chúc em luôn tươi cười như ánh mặt trời buổi sớm mai. 🕺🕺🕺🤸‍♂️🤸‍♂️🤸‍♂️", author: "for PhucNT" },
